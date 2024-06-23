@@ -1,0 +1,10 @@
+namespace: default
+resources:
+  - nginx.yaml
+  - mysql.yaml
+  - frontend.yaml
+  - backend.yaml
+configMapGenerator:
+  - name: nginx
+    files:
+      - configs/default.conf
